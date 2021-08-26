@@ -37,7 +37,7 @@ class Insta:
             print("************")
             print(d)
 
-    def match_them(self):
+    def compare(self):
         for f in self.following_set .difference(self.follow_set):
             print("***********************")
             print(f)
@@ -138,4 +138,4 @@ with open("followers.txt", "w", encoding="UTF-8") as file:
 
 browser.close()
 insta = Insta()
-insta.match_them()
+insta.compare()
